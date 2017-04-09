@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>App Name</title>
+  <style>
+    body {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+    }
+
+    .container {
+      width: 1350px;
+      height: 800px;
+      background: url('img/bg.png');
+      background-size: 1350px 800px;
+      background-repeat: no-repeat;
+      overflow-y: hidden;
+    }
+
+    .left-pane {
+      margin-top: 0;
+      width: 455px;
+      text-align: center;
+      vertical-align: top;
+      display: inline-block;
+      height: 100%;
+    }
+
+    .center-pane {
+      height: 100%;
+      width: 550px;
+      position: relative;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .right-pane {
+      height: 100%;
+      width: 320px;
+      position: relative;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .jo-fo-sho {
+      margin-left: 10px;
+      text-align: center;
+      height: 600px;
+    }
+
+    .hit-box {
+      top: 670px;
+      position: relative;
+      vertical-align: bottom;
+      height: 100px;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 0px;
+    }
+
+    .arrow-img {
+      top: -60px;
+      position: absolute;
+      height: 90px;
+      width: 100px;
+    }
+
+    .orient-RIGHT {
+      transform: rotate(90deg);
+    }
+
+    .orient-LEFT {
+      transform: rotate(-90deg);
+    }
+
+    .orient-DOWN {
+      transform: rotate(180deg);
+    }
+  </style>
+
+  <script>window.$ = window.jQuery = require('jquery');</script>
+</head>
+<body>
+  <div class="container">
+    <div class="left-pane">
+      <!-- Jo Images Only -->
+
+    </div>
+
+    <div class="center-pane">
+      <div class="hit-box">
+
+      </div>
+    </div>
+
+
+    <div class="right-pane">
+    </div>
+  </div>
+</body>
+<script>
+  require('./renderer.js')
+</script>
+</html>
